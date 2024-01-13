@@ -1,0 +1,115 @@
+/* PARENT CONTAINERS */
+.card-box,
+.information {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+  margin: 2em 0;
+}
+
+/*STYLING ACTIVITYCARDS*/
+.card {
+  text-align: center;
+  border-radius: 3em;
+  box-shadow: 0 0 1em 2px black;
+}
+
+.card:hover {
+  box-shadow: 0 0 1em 8px black;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-top-right-radius: 3em;
+  border-top-left-radius: 3em;
+  object-fit: contain;
+}
+
+.card-text {
+  margin: 1em 0;
+}
+
+.card-text h3 {
+  font-size: 1.5em;
+}
+
+.card-bottom {
+  background-color: #25507a;
+  color: white;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+}
+
+/*STYLING INFOCARDS*/
+.info-box {
+  box-shadow: 0 0 1em 2px black;
+}
+
+.info-box:hover {
+  box-shadow: 0 0 1em 8px black;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.info-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/*ICON VISJON OG VERDIER*/
+article ul li::before {
+  content: url(../Assets/Icons/Icon\ material-round-playlist-add-check.png); /* KILDE: ICONS 4 DESIGN - GRATIS XD PLUGIN */
+  margin: 1em;
+}
+
+/*MEDIAQUERIES MW768PX*/
+@media only screen and (max-width: 768px) {
+  /*STYLING ACTIVITYCARDS*/
+  .card {
+    margin: 2em 0;
+    max-width: 40%;
+  }
+
+  /*STYLING ACTIVITYCARDS*/
+  .info-box {
+    margin: 2em 0;
+  }
+
+  .info-box p {
+    font-size: 0.8em;
+  }
+
+  /*STYLING TEKST SECTION OG ARTICLE*/
+  article h3 {
+    font-size: 0.8em;
+  }
+}
+
+/*MEDIAQUERIES MW375PX*/
+@media only screen and (max-width: 375px) {
+  /* PARENT CONTAINERS */
+  .card-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*STYLING ACTIVITYCARDS*/
+  .card {
+    max-width: 100%;
+  }
+
+  /*STYLING ACTIVITYCARDS*/
+  .card-text {
+    margin: 1em 0;
+    font-size: 0.8em;
+  }
+
+  
+
+}

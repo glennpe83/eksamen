@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandefjord Turistkontor</title>
+    <link rel="stylesheet" href="./CSS/contact.css" />
+    <link rel="stylesheet" href="./CSS/global.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">Sandefjord Turistforening</a></h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Forside</a></li>
+          <li><a href="./contact.html">Kontakt oss</a></li>
+          <li><a href="./activities.html">Aktiviteter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- GENERALT CONTACT INFO -->
+    <main>
+      <article>
+        <h2>Kontakinformasjon:</h2>
+        <p>Dere kan kontakt oss via følgende kanaler eller bruke skjemaet under:</p>
+        <ul>
+          <li>
+            <strong>Epost:</strong>
+            <a href="mailto:post@sandefjordturistforening.no">post@sandefjordturistforening.no</a>
+          </li>
+          <li><strong>Telefon:</strong> 123 456 789</li>
+          <li><strong>Adresse:</strong> Turistveien vei. 3222 Sandefjord</li>
+        </ul>
+      </article>
+      <!-- CONTACT FORM -->
+      <section>
+        <form>
+          <label for="firstName">Fornavn:</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Skriv inn fornavn" />
+          <label for="lastName">Etternavn:</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Skriv inn etternavn" />
+          <label for="email">E-post:</label>
+          <input type="email" name="email" id="email" placeholder="@" />
+          <label for="message">Legg igjen kommentar:</label>
+          <textarea id="comment" name="Kommentar" rows="4">Legg igjen kommentar</textarea>
+          <br />
+          <label for="">Signer for nyhetsbrev</label>
+          <input type="checkbox" name="checkbox" id="checkbox" /><br />
+          <button>Send inn</button>
+        </form>
+      </section>
+      <section>
+        <!-- GOOGLE MAPS IFRAME -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1422235846626!2d10.224614712749608!3d59.1300207268522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646c0972417cae1%3A0x988f89a7e524ccce!2sDNT%20Sandefjord!5e0!3m2!1sen!2sno!4v1701608606502!5m2!1sen!2sno"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-contact">
+        <div>
+          <p>
+            <a href="mailto:post@sandefjordturistforening.no">post@sandefjordturistforening.no</a>
+          </p>
+        </div>
+        <div><p>Telefon: 12 34 56 78</p></div>
+        <div><p>Adresse: Turistveien 32</p></div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+/* NULLSTILLER PADDING OG MARGIN SOM UTGANGSPUNKT*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* STYLING AV HEADER */
+header h1 {
+  color: white;
+  background-color: #25507a;
+  text-align: center;
+  padding: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PSEUDO-ELEMENT SANDEFJORD KOMMUNESKJOLD*/
+header h1::before {
+  content: url(../Assets/Icons/logo.png);
+  max-width: 100%;
+  height: auto;
+}
+
+/* LAYOUT NAVIGASJON */
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* STYLING NAVIGASJON  */
+nav ul li {
+  margin: 0.5em 0 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+/* PSEUDO-CLASS*/
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+/* STYLING AV LINKER */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* STYLING AV HERO-PIC */
+.hero {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/*STYLING TEKST SECTION OG ARTICLE*/
+
+section {
+  padding: 2em;
+  text-align: center;
+}
+
+article {
+  padding: 2rem;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 1em 4em;
+  margin: 2em;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article h2 {
+  padding: 1.5em;
+  text-align: center;
+}
+
+article li {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+/* FOOTER */
+footer {
+  background-color: #25507a;
+  text-align: center;
+  color: white;
+  padding: 2em;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+footer p {
+  margin-left: 2em;
+}
+
+/*MEDIAQUERIES MW768PX*/
+@media only screen and (max-width: 768px) {
+  footer p {
+    font-size: 1em;
+  }
+}
+
+/*MEDIAQUERIES MW375PX*/
+@media only screen and (max-width: 375px) {
+  /*STYLING TEKST ARTICLE OG FOOTER*/
+  section {
+    padding: 1em;
+    text-align: center;
+  }
+
+  article {
+    padding: 0em 1em;
+  
+  }
+
+  article p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  article h2 {
+    padding: 1.5em;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  article li {
+    font-size: 0.8em;
+    line-height: 1.5;
+  }
+
+  footer p {
+    margin-left: 2em;
+    font-size: 0.8em;
+  }
+}

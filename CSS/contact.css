@@ -1,0 +1,66 @@
+/*FORM*/
+form {
+  max-width: 80%;
+  margin: 4rem;
+  padding: 2rem;
+  background-color: #25507a;
+  font-size: 1.7rem;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+/*LABEL BLOCK*/
+label {
+  display: block;
+  margin: 1em;
+}
+
+/* STYLING AV FORM */
+input,
+textarea {
+  width: 60%;
+  text-align: center;
+  padding: 8px;
+  border: solid 1px black;
+}
+
+form input::placeholder {
+  color: black;
+  font-size: 1.5em;
+}
+
+button {
+  padding: 0.5em;
+  margin: 1em;
+}
+
+button:hover {
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+}
+
+/* STYLING AV GOOGLEMAPS */
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+/*MEDIAQUERIES MW375PX*/
+@media only screen and (max-width: 375px) {
+  form {
+    width: 300px;
+    font-size: 0.8rem;
+  }
+/* STYLING AV FORM */
+  input,
+  textarea {
+    font-size: 0.8em;
+    padding: 0.5em;
+  }
+}
+
+form input::placeholder {
+  color: black;
+  font-size: 1.2em;
+}

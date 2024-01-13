@@ -1,0 +1,71 @@
+/* PARENT CONTAINER*/
+.container {
+  padding-inline: 3rem;
+}
+
+/*LAYOUT  INSPIRERT AV https://www.youtube.com/watch?v=sKFW3wek21Q*/
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* STYLING AV CARD */
+.card {
+  margin: 1em 0;
+  border: solid 1px black;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+.card-title {
+  background-color: #25507a;
+  color: white;
+}
+
+.card-flex img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  border-bottom-left-radius: 0em;
+  border-bottom-left-radius: 2em;
+}
+
+.card-price {
+  align-self: center;
+  margin: 0 auto;
+}
+
+.card-price p {
+  color: black;
+  font-size: 1.3em;
+}
+
+/* LISTSTYLING */
+section ul {
+  color: black;
+  font-size: 1.3em;
+}
+
+article {
+  margin: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-flex img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-bottom-left-radius: 0em;
+  }
+
+  .card-price {
+    font-size: 0.8em;
+  }
+}
